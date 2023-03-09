@@ -1,0 +1,18 @@
+
+
+  textarea: yup.mixed().required("Required"),
+
+
+
+, textarea: "" 
+
+
+
+
+
+
+<div>
+                    <label htmlFor="passwordConfirmation">Text Area</label>
+                    <textarea id="textarea" onChange={handleChange} onBlur={handleBlur} name='textarea' type="textarea" className="block w-full px-4 py-2 mt-2 border rounded-md   focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring" defaultValue={""} />
+                    <span>{errors.textarea}</span>
+                  </div>

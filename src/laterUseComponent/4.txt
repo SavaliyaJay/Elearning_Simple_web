@@ -1,0 +1,81 @@
+import React from 'react'
+import { Link } from 'react-router-dom';
+import { useFormik } from "formik";
+// import { advancedSchema } from "../schemas";
+// import CustomInput from "./CustomInput";
+// import CustomSelect from "./CustomSelect";
+import { valiRegistration } from './Validation/valiRegistration';
+
+// const onSubmit = async (values, actions) => {
+//   console.log(values);
+
+//   await new Promise((resolve) => setTimeout(resolve, 1000));
+//   actions.resetForm();
+// };
+
+const Registration = () => {
+
+  const forminitialValues = { username: "", email: "", password: "", confirmPassword: ""};
+
+  const { values, handleChange, handleSubmit, errors } = useFormik({
+    initialValues: forminitialValues,
+    validationSchema: valiRegistration,
+    onSubmit: (values) => {
+      console.log(values);
+      console.log(values.name);
+      console.log(values.email);
+    }
+  })
+  return (
+    // <div>Registration</div>
+    <>
+      <div className="mt-10">
+        <section className="max-w-4xl p-6 mx-auto rounded-md shadow hover:shadow-lg">
+          <h1 className="text-xl font-bold capitalize dark: text-center mb-1">Register Here!</h1>
+          <h2 className="text-xl capitalize dark: text-center mb-5">Enter Your Details</h2>
+          <hr />
+          <form onSubmit={handleSubmit} >
+            <div className="grid">
+            </div>
+            <div className="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-2">
+              <div>
+                <label htmlFor="username">Username</label>
+                <input name='username' value={values.username} onChange={handleChange} id="username" type="text" className="block w-full px-4 py-2 mt-2 border rounded-md   focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring" />
+                <br />
+                <div className="text-red-900">{errors.username}</div>
+              </div>
+              <div>
+                <label htmlFor="emailAddress">Email Address</label>
+                <input name='email' value={values.email} onChange={handleChange} id="emailAddress" type="email" className="block w-full px-4 py-2 mt-2 border rounded-md   focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring" />
+                <br />
+                <div className="text-red-900">{errors.email}</div>
+              </div>
+              <div>
+                <label htmlFor="password">Password</label>
+                <input name='password' value={values.password} onChange={handleChange} id="password" type="password" className="block w-full px-4 py-2 mt-2 border rounded-md   focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring" />
+                <br />
+                <div className="text-red-900">{errors.password}</div>
+              </div>
+              <div>
+                <label htmlFor="passwordConfirmation">Password Confirmation</label>
+                <input name='confirmPassword' value={values.confirmPassword} onChange={handleChange} id="passwordConfirmation" type="password" className="block w-full px-4 py-2 mt-2 border rounded-md   focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring" />
+                <br />
+                <div className="text-red-900">{errors.confirmPassword}</div>
+              </div>
+              <input type="submit" value="submit" className="px-3 py-2 leading-5 text-white transition-colors duration-200 transform bg-blue-500 rounded-md hover:bg-blue-700 focus:outline-none" />
+            </div>
+            <hr className='mt-3' />
+            <div className="mt-3 text-center">
+              Already have an account?<Link to='/Login' className='text-blue-500'> Sign in</Link>
+            </div>
+          </form>
+
+        </section>
+
+
+      </div>
+    </>
+  )
+}
+
+export default Registration
