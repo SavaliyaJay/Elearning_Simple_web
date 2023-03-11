@@ -18,7 +18,7 @@ export const valiRegistration1 = yup.object().shape({
     .oneOf([yup.ref("password"), null], "Passwords must match")
     .required("Required"),
 
-  ContactNumber: yup
+  phone: yup
     .number()
     .required("Required"),
 

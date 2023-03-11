@@ -50,7 +50,7 @@ const Registration = () => {
           <hr />
 
           <Formik
-            initialValues={{ username: "", email: "", password: "", confirmPassword: "", ContactNumber: "", userType: "" }}
+            initialValues={{ username: "", email: "", password: "", confirmPassword: "", phone: "", userType: "" }}
             validationSchema={valiRegistration1}
             onSubmit={onSubmit}
           >
@@ -101,10 +101,10 @@ const Registration = () => {
                     />
                   </div>
                   <div>
-                    {/* <label htmlFor="ContactNumber">Contact Number</label> */}
+                    {/* <label htmlFor="phone">Contact Number</label> */}
                     <CustomInput
                       label="Contact Number"
-                      name="ContactNumber"
+                      name="phone"
                       type="number"
                       placeholder="Enter your Phone Number"
                     />
