@@ -4,7 +4,7 @@ export const valiCourse = yup.object().shape({
     title: yup
         .string()
         .min(3)
-        .max(5)
+        .max(15)
         .required("Required"),
 
     image: yup
