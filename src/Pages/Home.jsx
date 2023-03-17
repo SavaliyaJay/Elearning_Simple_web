@@ -3,15 +3,14 @@ import React from 'react'
 // import Course from './components/Course';
 // import Navbar from './components/Navbar';
 // import Navbar from './../components/Navbar';
+import Slider from './../components/Slider';
 
 const Home = () => {
     return (
         <>
             {/* <Navbar/> */}
 
-            <h1>
-                Hi Am Home
-            </h1>
+            <Slider/>
             {/* <SubCat /> */}
         </>
     )

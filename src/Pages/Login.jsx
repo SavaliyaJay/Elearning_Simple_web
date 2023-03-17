@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { Form, Formik } from "formik";
-import CustomInput from "./CustomInput";
+import CustomInput from "../components/CustomInput";
 import { valiLogin } from './Validation/valiLogin';
 
 const onSubmit = async (values, actions) => {

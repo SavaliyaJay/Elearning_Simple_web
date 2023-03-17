@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import { Form, Formik } from "formik";
-import CustomInput from "./CustomInput";
-import CustomSelect from "./CustomSelect";
+import CustomInput from "../components/CustomInput";
+import CustomSelect from "../components/CustomSelect";
 import { valiRegistration1 } from './Validation/valiRegistration1';
 import axios from "axios";
 

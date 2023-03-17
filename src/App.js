@@ -8,7 +8,6 @@ import Login from './Pages/Login';
 import Registration from './Pages/Registration';
 import { BrowserRouter as Router, Routes, Route, } from "react-router-dom";
 // import Footer from './components/Footer';
-import Slider from './components/Slider';
 
 
 function App() {
@@ -33,7 +32,6 @@ function App() {
         </Router>
       </header>
       
-      <Slider />
       {/* <footer>
 
         <Footer />

@@ -1,8 +1,8 @@
 import React from 'react'
 import { valiCourse } from './Validation/valiCourse';
 import { Form, Formik } from "formik";
-import CustomInput from "./CustomInput";
-import CustomUpload from "./CustomUpload";
+import CustomInput from "../components/CustomInput";
+import CustomUpload from "../components/CustomUpload";
 
 
 const onSubmit = async (values, actions) => {
