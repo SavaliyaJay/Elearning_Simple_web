@@ -36,6 +36,8 @@ function App() {
 
         <Footer />
       </footer> */}
+
+      {/* <Footer /> */}
     </>
   );
 }
