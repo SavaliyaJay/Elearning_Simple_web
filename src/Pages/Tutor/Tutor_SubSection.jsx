@@ -61,4 +61,4 @@ const Tutor_SubSection = () => {
   )
 }
 
-export default Tutor_SubSection
+export default Tutor_SubSection;
