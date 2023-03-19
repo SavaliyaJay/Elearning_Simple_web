@@ -7,7 +7,7 @@ import Home from './Pages/Home';
 import Login from './Pages/Login';
 import Registration from './Pages/Registration';
 import { BrowserRouter as Router, Routes, Route, } from "react-router-dom";
-// import Footer from './components/Footer';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -29,15 +29,16 @@ function App() {
             <Route exact path="/Login" element={<Login />}></Route>
             <Route exact path="/Registration" element={<Registration />}></Route>
           </Routes>
+          <Footer />
         </Router>
       </header>
-      
+
       {/* <footer>
 
         <Footer />
       </footer> */}
 
-      {/* <Footer /> */}
+
     </>
   );
 }
