@@ -1,10 +1,21 @@
-import React, { useState, useRef } from 'react';
-import JoditEditor from 'jodit-react';
+import React, { useState, useRef } from "react";
+import JoditEditor from "jodit-react";
 
 const Tutor_TextArea = () => {
   const editor = useRef(null);
   const [content, setContent] = useState("");
-  console.log(content);
+
+  const clickhere = async (event) => {
+    event.preventDefault();
+    console.log(content);
+    // eslint-disable-next-line
+    // setContent = "jay";
+    // console.log(editor);
+    // await new Promise((resolve) => setTimeout(resolve, 1000));
+    // editor.value = '';
+    // editor.resetForm();
+
+  };
   return (
     <>
       <div className="mt-10">
@@ -16,7 +27,7 @@ const Tutor_TextArea = () => {
             Enter Details of Sub Section
           </h2>
           <hr />
-          <form>
+          <form onSubmit={clickhere} id="myForm" > 
             <div className="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-1">
               <div>
                 <label htmlFor="passwordConfirmation">Text Area</label>
@@ -25,6 +36,15 @@ const Tutor_TextArea = () => {
                   value={content}
                   onChange={(newContent) => setContent(newContent)}
                 />
+
+                <div className="flex justify-center mt-6">
+                  <button
+                    type="submit"
+                    className="px-3 py-2 leading-5 text-white transition-colors duration-200 transform bg-blue-500 rounded-md hover:bg-blue-700 focus:outline-none"
+                  >
+                    Let's Go
+                  </button>
+                </div>
                 {/* <textarea
                   id="textarea"
                   type="textarea"

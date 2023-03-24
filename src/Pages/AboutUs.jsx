@@ -6,7 +6,7 @@ import Tutor_TextArea from "./Tutor/Tutor_TextArea";
 const AboutUs = () => {
   return (
     <>
-      <div>AboutUs</div>
+      <div className="w-10">AboutUs</div>
       {/* {
         // eslint-disable-next-line
         <Tutor_Section />
