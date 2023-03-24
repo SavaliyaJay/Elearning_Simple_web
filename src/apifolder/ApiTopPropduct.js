@@ -1,26 +1,62 @@
 export const ApiTopPropduct = [
     {
-        src : 'https://cdn.shopify.com/s/files/1/0240/7285/products/WithinYourselfLongSleeveT-ShirtinBlack06_360x.jpg?v=1642719812',
+        src : './assets/7.jpg',
+        name : 'html + css + js',
         price: '500'
     },
     {
-        src : 'https://cdn.shopify.com/s/files/1/0240/7285/products/WithinYourselfLongSleeveT-ShirtinElectricBlue04_360x.jpg?v=1642719824',
+        src : './assets/8.png',
+        name: 'Online Course',
         price: '600'
     },
     {
-        src : 'https://cdn.shopify.com/s/files/1/0240/7285/products/KushJonesLST-ShirtinBlack09_360x.jpg?v=1642719733',
+        src : './assets/9.jpg',
+        name: 'React JS AS Web app',
         price: '700'
     },
     {
-        src : 'https://cdn.shopify.com/s/files/1/0240/7285/products/VisitorsCrewneckSweatshirtinWhite11_360x.jpg?v=1642719779',
+        src : './assets/10.png',
+        name: 'React JS AS Application',
         price: '800'
     },
     {
-        src : 'https://cdn.shopify.com/s/files/1/0240/7285/products/KNITPULLOVER-HARVEST-2_360x.jpg?v=1642616536',
+        src : './assets/11.jpeg',
+        name: 'Angular JS',
         price: '900'
     },
     {
-        src : 'https://cdn.shopify.com/s/files/1/0240/7285/products/KNITPULLOVER-PISTACHIO-2_360x.jpg?v=1642545216',
+        src : './assets/12.png',
+        name: 'Java Programming',
+        price: '1000'
+    },
+    {
+        src : './assets/13.png',
+        name: 'C Programming',
+        price: '500'
+    },
+    {
+        src : './assets/14.jpg',
+        name: 'JavaScript',
+        price: '600'
+    },
+    {
+        src : './assets/15.png',
+        name: '',
+        price: '700'
+    },
+    {
+        src : './assets/16.jpg',
+        name: '',
+        price: '800'
+    },
+    {
+        src : './assets/17.png',
+        name: '',
+        price: '900'
+    },
+    {
+        src : './assets/18.png',
+        name: '',
         price: '1000'
     }
 ]
